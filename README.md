@@ -49,4 +49,12 @@ Grid
    - Bootstrap里可以多用几个`.container`把内容定宽居中，把不相关的内容独立出来，footer就是最后面睡着
    - p元素里可以放`.btn`
 
+#### Examples: 04-Narrow Jumbotron
+
+狭小的超宽屏
+
+- 此例所用组件
+
+----------
+
 ### V4篇
