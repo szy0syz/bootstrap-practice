@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H+ 后台管理系统 - 登录</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/bootstrap.min.css?v=3.3.7" rel="stylesheet">
+  <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css?v=4.1.0" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
-<body>
+<body class="gray-bg">
 
+<div class="middle-box text-center loginscreen animated fadeInDown">
+
+  <div>
+    <h1 class="logo-name">H+</h1>
+  </div>
+  <h3>欢迎使用H+</h3>
+
+  <form action="index.html">
+    <div class="form-group">
+      <!--为了达到h5标准还是配合label吧-->
+      <label for="email" class="control-label sr-only">用户名</label>
+      <input id="email" type="email" class="form-control" placeholder="用户名" required>
+      <!--为了达到h5标准还是配合label吧-->
+      <label for="password" class="control-label sr-only">密码</label>
+      <input id="password" type="password" class="form-control" placeholder="密码" required>
+    </div>
+    <button class="btn btn-primary block full-width m-b">登 录</button>
+    <p class="text-muted text-center">
+      <a href="login.html">
+        <small>忘记密码了？</small>
+      </a> | <a href="register.html">注册一个新账号</a>
+    </p>
+  </form>
+
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.min.js?v=2.1.4"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 </body>
