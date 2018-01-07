@@ -844,11 +844,13 @@ fieldset[disabled] .btn-info.active {
     border-color: #26d7d9;
 }
 
-.btn-default {
-    background-color: #c2c2c2;
-    border-color: #c2c2c2;
-    color: #FFFFFF;
-}
+/*fixed by szy 20180107：取消默认按钮样式*/
+
+/*.btn-default {*/
+    /*background-color: #c2c2c2;*/
+    /*border-color: #c2c2c2;*/
+    /*color: #FFFFFF;*/
+/*}*/
 
 /*.btn-default:hover,*/
 /*.btn-default:focus,*/
