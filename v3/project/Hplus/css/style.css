@@ -111,6 +111,7 @@ body.body-small .navbar-top-links li:last-child {
     min-height: 50px;
 }
 
+
 .dropdown-menu {
     border: medium none;
     display: none;
@@ -4130,10 +4131,11 @@ table.table-mail tr td {
     font-size: 12px;
 }
 
-.ibox .open > .dropdown-menu {
-    left: auto;
-    right: 0;
-}
+/*fixed  by szy 20180107：修复字体格式下拉菜单位置问题*/
+/*.ibox .open > .dropdown-menu {*/
+    /*left: auto;*/
+    /*right: 0;*/
+/*}*/
 
 
 /* BACKGROUNDS */
