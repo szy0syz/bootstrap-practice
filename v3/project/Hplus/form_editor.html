@@ -6,26 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wyswig Summernote 富文本编辑器</title>
 
-  <!-- Bootstrap -->
-  <!--<link rel="shortcut icon" href="favicon.ico">-->
-  <!--<link href="css/bootstrap.min.css?v=3.3.7" rel="stylesheet">-->
-  <!--<link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">-->
-  <!--<link href="css/animate.css" rel="stylesheet">-->
-
-  <!--&lt;!&ndash;<link href="css/style.css?v=4.1.0" rel="stylesheet">&ndash;&gt;-->
-  <!--<link rel="stylesheet" href="css/summernote/summernote.css">-->
-
-  <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">-->
+  <link rel="shortcut icon" href="favicon.ico">
   <link href="css/bootstrap.min.css?v=3.3.7" rel="stylesheet">
-  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>-->
-  <script src="js/jquery.min.js?v=2.1.4"></script>
-  <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>-->
-  <script src="js/bootstrap.min.js"></script>
-  <!--<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">-->
+  <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/summernote/summernote.css">
-  <script src="js/plugins/summernote/summernote.js"></script>
-  <!--我曹，官网min脚本竟然是错的！！-->
-  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>-->
+  <link href="css/style.css?v=4.1.0" rel="stylesheet">
+  <!--我晕，官网.min脚本竟然是错的！-->
 
   <!--[if lt IE 9]>
   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -43,6 +31,8 @@
       <div class="ibox float-e-margins">
         <div class="ibox-title">
           <h5>Wyswig Summernote 富文本编辑器</h5>
+          <button type="button" class="btn btn-xs btn-primary m-l-sm pull-right" onclick="save()">保存</button>
+          <button type="button" class="btn btn-xs btn-primary pull-right" onclick="edit()">编辑</button>
         </div>
         <div class="ibox-content no-padding">
           <div id="summernote">
@@ -63,19 +53,35 @@
   </div>
 </div>
 
-<!--<script src="js/jquery.min.js?v=2.1.4"></script>-->
-<!--<script src="js/bootstrap.min.js"></script>-->
-<!--&lt;!&ndash; SUMMERNOTE &ndash;&gt;-->
-<!--<script src="js/plugins/summernote/summernote.min.js"></script>-->
-<!--<script src="js/plugins/summernote/summernote-zh-CN.js"></script>-->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- SUMMERNOTE -->
+<script src="js/plugins/summernote/summernote.js"></script>
+<script src="js/plugins/summernote/summernote-zh-CN.js"></script>
 <script>
+  var options = {
+    height: 300,
+    focus: true,
+    lang: 'zh-CN'
+  };
+
+  var editor = $('#summernote');
+
   $(document).ready(function () {
-    $('#summernote').summernote({
-      height: 300,
-      focus: true,
-      lang: 'zh-CN'
-    });
-  })
+    editor.summernote(options);
+  });
+
+  var edit = function () {
+    editor.parent().addClass('no-padding');
+    editor.summernote(options);
+  };
+
+  var save = function () {
+    editor.parent().removeClass('no-padding');
+    var markupStr =  editor.summernote('code');
+    editor.summernote('destroy');
+  };
 </script>
 </body>
 </html>
