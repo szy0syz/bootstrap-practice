@@ -843,11 +843,11 @@ fieldset[disabled] .btn-info.active {
     border-color: #26d7d9;
 }
 
-/*.btn-default {*/
-    /*background-color: #c2c2c2;*/
-    /*border-color: #c2c2c2;*/
-    /*color: #FFFFFF;*/
-/*}*/
+.btn-default {
+    background-color: #c2c2c2;
+    border-color: #c2c2c2;
+    color: #FFFFFF;
+}
 
 /*.btn-default:hover,*/
 /*.btn-default:focus,*/
