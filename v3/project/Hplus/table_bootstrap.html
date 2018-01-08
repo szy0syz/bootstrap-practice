@@ -23,6 +23,7 @@
 <body class="gray-bg">
 
 <div class="wrapper wrapper-content animated fadeInRight">
+
   <div class="ibox float-e-margins">
     <div class="ibox-title">
       <h5>Bootstrap Table</h5>
@@ -40,12 +41,13 @@
     </div>
     <div class="ibox-content">
       <div class="row row-lg">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <!-- Example Basic Sort -->
           <div class="example-wrap">
             <h4 class="example-title">基本排序</h4>
             <div class="example">
-              <table data-toggle="table" data-url="data/bt-data.json" data-height="250" data-sort-name="First" data-sort-order="desc" data-mobile-responsive="true">
+              <table data-toggle="table" data-url="data/bt-data.json" data-height="250" data-sort-name="First"
+                     data-sort-order="desc" data-mobile-responsive="true">
                 <thead>
                 <tr>
                   <th data-field="Tid" data-sortable="true">ID</th>
@@ -56,12 +58,120 @@
               </table>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
 
+  <div class="ibox">
+    <div class="ibox-title">
+      <h5>使用bootstrap-table自带css样式写table</h5>
+    </div>
+    <div class="ibox-content">
+      <div class="row row-lg">
+        <div class="col-sm-12">
+          <div class="bootstrap-table">
+            <!--表头区域-->
+            <!--<div class="fixed-table-toolbar">-->
+              <!--<div class="fixed-table-toolbar">-->
+                <!--<div class="columns columns-right btn-group pull-right" role="group">-->
+                  <!--<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-chevron-down"></i>-->
+                  <!--</button>-->
+                <!--</div>-->
+                <!--<div class="pull-right search">-->
+                  <!--<input type="text" placeholder="Search" class="form-control">-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--表体区域-->
+            <div class="fixed-table-container" style="padding-bottom: 0;">
+              <div class="fixed-table-header" style="display: none;"><table></table></div>
+              <div class="fixed-table-body">
+                <div class="fixed-table-loading" style="top: 41px;">Loading, please wait...</div>
+                <table class="table table-hover" id="table" data-toggle="table" data-pagination="true"
+                       data-search="true" data-advanced-search="true" data-id-table="advancedTable"
+                       data-url="data/bt-data2.json">
+                  <thead>
+                  <tr>
+                    <th style="" data-field="id">
+                      <div class="th-inner sortable both">ID</div>
+                      <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="name">
+                      <div class="th-inner sortable both">Item Name</div>
+                      <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="price">
+                      <div class="th-inner sortable both">Item Price</div>
+                      <div class="fht-cell"></div>
+                    </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr data-index="0">
+                    <td style="">0</td>
+                    <td style="">Item 0</td>
+                    <td style="">$0</td>
+                  </tr>
+                  <tr data-index="1">
+                    <td style="">1</td>
+                    <td style="">Item 1</td>
+                    <td style="">$1</td>
+                  </tr>
+                  <tr data-index="2">
+                    <td style="">2</td>
+                    <td style="">Item 2</td>
+                    <td style="">$2</td>
+                  </tr>
+                  <tr data-index="3">
+                    <td style="">3</td>
+                    <td style="">Item 3</td>
+                    <td style="">$3</td>
+                  </tr>
+                  <tr data-index="4">
+                    <td style="">4</td>
+                    <td style="">Item 4</td>
+                    <td style="">$4</td>
+                  </tr>
+                  <tr data-index="5">
+                    <td style="">5</td>
+                    <td style="">Item 5</td>
+                    <td style="">$5</td>
+                  </tr>
+                  <tr data-index="6">
+                    <td style="">6</td>
+                    <td style="">Item 6</td>
+                    <td style="">$6</td>
+                  </tr>
+                  <tr data-index="7">
+                    <td style="">7</td>
+                    <td style="">Item 7</td>
+                    <td style="">$7</td>
+                  </tr>
+                  <tr data-index="8">
+                    <td style="">8</td>
+                    <td style="">Item 8</td>
+                    <td style="">$8</td>
+                  </tr>
+                  <tr data-index="9">
+                    <td style="">9</td>
+                    <td style="">Item 9</td>
+                    <td style="">$9</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div>
+            </div>
+            <!--表尾区域-->
+            <!--<div class="fixed-table-pagination" style="display: block">-->
+
+            <!--</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="js/jquery.min.js?v=2.1.4"></script>
