@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>H+ 后台主题UI框架 - 主页</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <link href="css/bootstrap.min.css?v=3.3.7" rel="stylesheet">
     <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
@@ -18,13 +16,46 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
 
-  <h1>index</h1>
+<body class="fixed-sidebar full-height-layout gray-bg">
+  <!--.wrapper为body元素之后仅跟的主容器-->
+  <div class="wrapper">
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="nav-close"><i class="fa fa-times-circle"></i></div>
+      <div class="sidebar-collapse">
+        <ul class="nav">
+          <li class="nav-header">
+            <div class="dropdown profile-element">
+              <span><img class="img-circle" src="img/profile_small.jpg" alt="profile"></span>
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <span class="clear">
+                  <span class="block m-t-xs"><strong class="font-bold">Jerry Shi</strong></span>
+                  <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                </span>
+              </a>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li><a class="J_menuItem" href="#">修改头像</a></li>
+                <li><a class="J_menuItem" href="#">个人资料</a></li>
+                <li><a class="J_menuItem" href="#">联系我们</a></li>
+                <li><a class="J_menuItem" href="#">信箱</a></li>
+                <li class="divider"></li>
+                <li><a href="#">安全退出</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--左侧导航结束-->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+
+
+  </div>
+
 <script src="js/jquery.min.js?v=2.1.4"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
